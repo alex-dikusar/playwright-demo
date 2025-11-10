@@ -1,0 +1,23 @@
+{
+  "name": "playwright-test-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed --workers=1",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "start": "http-server ./app -p 4173 -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^20.19.24",
+    "dotenv": "^17.2.3",
+    "http-server": "^14.1.1",
+    "typescript": "^5.0.0"
+  }
+}
